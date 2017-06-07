@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans+Condensed:300|Roboto|Roboto+Condensed" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="content/js/holder.js"></script>
+    <style>
+        body {
+            /*font-family: 'Lato', sans-serif;*/
+            /*font-family: 'Open Sans Condensed', sans-serif;*/
+            /*font-family: 'Roboto', sans-serif;*/
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .header {
+            /*border-bottom: 1px solid #808080;*/
+        }
+
+        .navbar a {
+            color: #ffffff !important;
+        }
+
+        .navbar-dark {
+            background-color: #0c2331;
+        }
+
+        .white {
+            color: #ffffff !important;
+        }
+
+        #nav-toggle-button {
+            background-color: red;
+        }
+
+        button, input, optgroup, select, textarea {
+            font-family: 'Roboto Condensed', sans-serif !important;
+        }
+
+        .offer-image-header {
+            font-size: 16px;
+        }
+
+        .offer-image-text {
+            font-size: 14px;
+        }
+
+        #footer {
+            margin-top: 1em;
+            color: #fff;
+        }
+
+            #footer ul {
+                list-style:none;
+            }
+
+                #footer ul li {
+                    list-style-type:none;
+                }
+
+                #footer ul li a {
+                    color: #fff;
+                    font-size:14px;
+                }
+    </style>
+</head>
+<body>
+    <div id="navigation">
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-light bg-faded header navbar-dark">
+            <button id="" class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon white"></span>
+            </button>
+            <a class="navbar-brand" href="#">SOBD</a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img class="d-block img-fluid" data-src="holder.js/1300x400?auto=yes&amp;bg=0c2331&amp;fg=555&amp;" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Test header 1</h5>
+                    <p>test content</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" data-src="holder.js/1300x400?auto=yes&amp;bg=0c2331&amp;fg=555&amp;" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Test header 2</h5>
+                    <p>test content</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block img-fluid" data-src="holder.js/1300x400?auto=yes&amp;bg=0c2331&amp;fg=555&amp;" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Test header 3</h5>
+                    <p>test content</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container" style="margin-top: 10px;">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Category
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Food</a>
+                            <a class="dropdown-item" href="#">Electronics</a>
+                            <a class="dropdown-item" href="#">Fasion</a>
+                            <a class="dropdown-item" href="#">Service</a>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Search offers by selecting category">
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" data-src="holder.js/100px180?auto=yes&amp;bg=777&amp;fg=555&amp;" alt="Offer 1">
+                    <div class="card-block">
+                        <h4 class="card-title offer-image-header">Card title</h4>
+                        <p class="card-text offer-image-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" data-src="holder.js/100px180?auto=yes&amp;bg=777&amp;fg=555&amp;" alt="Offer 1">
+                    <div class="card-block">
+                        <h4 class="card-title offer-image-header">Card title</h4>
+                        <p class="card-text offer-image-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" data-src="holder.js/100px180?auto=yes&amp;bg=777&amp;fg=555&amp;" alt="Offer 1">
+                    <div class="card-block">
+                        <h4 class="card-title offer-image-header">Card title</h4>
+                        <p class="card-text offer-image-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" data-src="holder.js/100px180?auto=yes&amp;bg=777&amp;fg=555&amp;" alt="Offer 1">
+                    <div class="card-block">
+                        <h4 class="card-title offer-image-header">Card title</h4>
+                        <p class="card-text offer-image-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" data-src="holder.js/100px180?auto=yes&amp;bg=777&amp;fg=555&amp;" alt="Offer 1">
+                    <div class="card-block">
+                        <h4 class="card-title offer-image-header">Card title</h4>
+                        <p class="card-text offer-image-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" data-src="holder.js/100px180?auto=yes&amp;bg=777&amp;fg=555&amp;" alt="Offer 1">
+                    <div class="card-block">
+                        <h4 class="card-title offer-image-header">Card title</h4>
+                        <p class="card-text offer-image-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" data-src="holder.js/100px180?auto=yes&amp;bg=777&amp;fg=555&amp;" alt="Offer 1">
+                    <div class="card-block">
+                        <h4 class="card-title offer-image-header">Card title</h4>
+                        <p class="card-text offer-image-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img class="card-img-top" data-src="holder.js/100px180?auto=yes&amp;bg=777&amp;fg=555&amp;" alt="Offer 1">
+                    <div class="card-block">
+                        <h4 class="card-title offer-image-header">Card title</h4>
+                        <p class="card-text offer-image-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background-color: #0c2331; width: 100%;" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <div style="padding-top:1em;">
+                        <ul style="padding:0px 0px 0px 10px">
+                            <li>
+                                <a href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Services</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4" style="text-align:right">
+                    <div style="padding-top:1em;">
+                        <ul style="padding:0px 0px 0px 10px">
+                            <li>
+                                <a href="#">Facebook&nbsp;&nbsp;&nbsp;<i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">Twitter&nbsp;&nbsp;&nbsp;<i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">Pintrest&nbsp;&nbsp;&nbsp;<i class="fa fa-pinterest-square" aria-hidden="true"></i></a>
+                            </li>
+                            <li>
+                                <a href="#">contact-us@sobd.com&nbsp;&nbsp;&nbsp;<i class="fa fa-envelope" aria-hidden="true"></i></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
