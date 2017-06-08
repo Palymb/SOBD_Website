@@ -62,17 +62,79 @@
         }
 
             #footer ul {
-                list-style:none;
+                list-style: none;
             }
 
                 #footer ul li {
-                    list-style-type:none;
+                    list-style-type: none;
                 }
 
-                #footer ul li a {
-                    color: #fff;
-                    font-size:14px;
-                }
+                    #footer ul li a {
+                        color: #fff;
+                        font-size: 14px;
+                    }
+
+        .searchWrapper {
+            position: absolute;
+            z-index: 2000;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: #0c1455;
+            padding: 1em 1em;
+            opacity: 0.98;
+            padding-bottom:0em;
+        }
+
+        .searchContainer {
+            opacity: 1;
+            background-color: #0c2331;
+            padding: 2em;
+            z-index: 2001;
+            color: #fff;
+            border-radius: 0.5em;
+            height:100vh;
+            /*padding-bottom:-4em;*/
+        }
+
+        .searchInputLarge {
+            border: none;
+            border-bottom: 2px solid #d17c78;
+            border-radius: 0;
+            background-color: #0c2331;
+            width: 100%;
+            color: #d17c78;
+            font-weight: bold;
+            line-height: 1.5em;
+            outline: none;
+            padding-left: 0.5em;
+            height:3em;
+            font-size:1em;
+        }
+
+        .hidden {
+            visibility: hidden;
+            opacity:0;
+            -webkit-transition: visibility 300ms, opacity 300ms ease-in-out;
+            transition: visibility 300ms, opacity 300ms ease-in-out;
+        }
+
+        .hiddenByOpacity {
+            opacity:0;
+        }
+
+        .visble {
+            visibility: visible;
+            opacity:1;
+        }
+
+        .showSearch {
+            visibility: visible;
+            opacity:0.98;
+            -webkit-transition: visibility 300ms, opacity 300ms ease-in-out;
+            transition: visibility 300ms, opacity 300ms ease-in-out;
+        }
     </style>
 </head>
 <body>
@@ -155,7 +217,7 @@
                             <a class="dropdown-item" href="#">Service</a>
                         </div>
                     </div>
-                    <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Search offers by selecting category">
+                    <input id="searchInputText" type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Search offers by selecting category">
                 </div>
             </div>
         </div>
@@ -250,8 +312,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-8">
-                    <div style="padding-top:1em;">
-                        <ul style="padding:0px 0px 0px 10px">
+                    <div style="padding-top: 1em;">
+                        <ul style="padding: 0px 0px 0px 10px">
                             <li>
                                 <a href="#">Home <span class="sr-only">(current)</span></a>
                             </li>
@@ -267,9 +329,9 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-4" style="text-align:right">
-                    <div style="padding-top:1em;">
-                        <ul style="padding:0px 0px 0px 10px">
+                <div class="col-4" style="text-align: right">
+                    <div style="padding-top: 1em;">
+                        <ul style="padding: 0px 0px 0px 10px">
                             <li>
                                 <a href="#">Facebook&nbsp;&nbsp;&nbsp;<i class="fa fa-facebook-square" aria-hidden="true"></i></a>
                             </li>
@@ -288,5 +350,32 @@
             </div>
         </div>
     </div>
+
+    <div id="searchWrapper" class="searchWrapper hidden">
+        <div class="searchContainer">
+            <div class="row">
+                <div class="col-11">
+                    <input type="text" class="searchInputLarge" placeholder="search" />
+                </div>
+                <div class="col-1" style="text-align: right; color: #d17c78; cursor: pointer">
+                    <i  id="closeSearchWraper" class="fa fa-times fa-4" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $('#searchInputText,#closeSearchWraper').click(function () {
+                $('#searchWrapper').toggleClass('showSearch');
+                $('.searchInputLarge').focus();
+            });
+            //$('#closeSearchWraper').click(function () {
+            //    $('#searchWrapper').toggleClass('hidden', 'showSearch');
+            //});
+        });
+    </script>
 </body>
 </html>
